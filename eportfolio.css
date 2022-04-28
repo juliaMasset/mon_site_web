@@ -547,3 +547,15 @@ ul
 {
     border-radius: 50%;
 }
+
+#rm:hover
+{
+    cursor: auto;
+    transform: translate(0);
+}
+
+#projet:hover
+{
+    cursor: auto;
+    transform: translate(0);
+}
