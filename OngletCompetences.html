@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Julia Masset - Portfolio</title>
+        <meta charset="UTF-8">
+        <!-- On  associe une image icone pour l'entête -->
+	    <link rel="icon" type="image/png" href="stockage/logo.png" />
+        <link rel="stylesheet" type="text/css" title="design" href="eportfolio.css"/>
+    </head>
+    
+    <body>
+        <div id="menu">
+            <img id="image-menu" src="stockage/logoSansFondNegatif.png" alt="logo" 
+            onmouseover="this.src='stockage/logoSansFond.png';"
+            onmouseout="this.src='stockage/logoSansFondNegatif.png';" 
+            onclick="document.location='Accueil.html';"/>
+            <table id="tableau-menu">
+                <tr>
+                    <td class="t-text" onclick="document.location='OngletFormation.html'">Formation</td>
+                    <td class="t-text" onclick="document.location='OngletExperiences.html'">Expériences</td>
+                    <td class="t-text" id="active">Compétences</td>
+                    <td class="t-text" onclick="document.location='OngletProjets.html'">Projets</td>
+                    <td class="t-text" onclick="document.location='OngletInterets.html'">Intérêts</td>
+                </tr>
+            </table>
+        </div> 
+
+        <div id="rectangles">
+            <div class="competences">
+                <div class="rectangle" id="competence">
+                    <div id="drapeaux">
+                        <img class="drapeau" src="stockage/la-france.png">
+                        <img class="drapeau" src="stockage/royaume-uni.png">
+                        <img class="drapeau" src="stockage/allemand.png">
+                    </div>
+                    <div class="description">
+                        <h2>Langues</h2> 
+                        <ul>
+                            <li>Français: Langue natale</li>
+                            <li>Anglais: Niveau C1</li>
+                            <li>Allemand: Niveau A2/B1</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rectangle" id="competence">
+                    <img class="drapeau" id="soft-skills" src="stockage/competence.png">
+                    <div class="description">
+                        <h2>Soft Skills</h2> 
+                        <ul>
+                            <li>Persévérance</li>
+                            <li>Rigueur</li>
+                            <li>Ouverture d'esprit</li>
+                            <li>Esprit d'équipe</li>
+                            <li>Créativité</li>
+                            <li>Capacité d'adaptation</li>
+                            <li>Résistance au stress</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competences">
+                <div class="rectangle" id="competence">
+                    <img class="drapeau" id="soft-skills" src="stockage/logiciel.png">
+                    <div class="description">
+                        <h2>Logiciels</h2> 
+                        <ul>
+                            <li>MS Office</li>
+                            <li>Visual Studio Code</li>
+                            <li>Android Studio</li>
+                            <li>QlikSense</li>
+                            <li>Photoshop</li>
+                            <li>Figma</li>
+                            <li>WordPress</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rectangle" id="competence">
+                    <img class="drapeau" id="soft-skills" src="stockage/programmation.png">
+                    <div class="description">
+                        <h2>Programmation</h2> 
+                        <ul>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Kotlin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="https://www.linkedin.com/in/julia-masset/" target="_blank"> <img id="linkedin" src="stockage/linkedin.png"> </a>
+            <a href="mailto: julia.masset@epfedu.fr"> <img id="email" src="stockage/email.png"> </a>
+        </div>
+    </body>
+</html>

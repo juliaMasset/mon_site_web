@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Julia Masset - Portfolio</title>
+        <meta charset="UTF-8">
+        <!-- On  associe une image icone pour l'entête -->
+	    <link rel="icon" type="image/png" href="stockage/logo.png" />
+        <link rel="stylesheet" type="text/css" title="design" href="eportfolio.css"/>
+    </head>
+
+    <body>
+        <div id="menu">
+            <img id="image-menu" src="stockage/logoSansFondNegatif.png" alt="logo" 
+            onmouseover="this.src='stockage/logoSansFond.png';"
+            onmouseout="this.src='stockage/logoSansFondNegatif.png';" 
+            onclick="document.location='Accueil.html';"/>
+            <table id="tableau-menu">
+                <tr>
+                    <td class="t-text" id="active">Formation</td>
+                    <td class="t-text" onclick="document.location='OngletExperiences.html'">Expériences</td>
+                    <td class="t-text" onclick="document.location='OngletCompetences.html'">Compétences</td>
+                    <td class="t-text" onclick="document.location='OngletProjets.html'">Projets</td>
+                    <td class="t-text" onclick="document.location='OngletInterets.html'">Intérêts</td>
+                </tr>
+            </table>
+        </div> 
+        
+        <div id="corps">
+        <div class="rectangle">
+            <a href="https://www.epf.fr/" target="_blank"><img class="img" src="stockage/EPFcouleur.png"></a> 
+            <div class="description">
+                <h2>EPF école d'ingénieur-e-s généraliste, Cachan</h2> </br>
+                <p>Cycle ingénieur en majeure ingénierie et numérique</p>
+                <p class="date">2020-2023</p>
+                <p class="infos">Engineering, Environnement de développement, 
+                    Sécurité des systèmes d'information, Tech Trends, Business Game, Économie, Management de projets. 
+                    Réalisation de différents projets.</p> 
+                <a href="stockage/2022_EPF_majeure_ingenierie_numerique.pdf" target="_blank">
+                    <button class="btn" id="en_savoir_plus">En savoir plus<img src="stockage/voir.png"></button>
+                </a> </br>
+                <p>Cycle préparatoire</p>
+                <p class="date">2018-2020</p>
+                <p class="infos">Acquisition des outils mathématiques, physiques et informatiques nécessaires pour l’ingénieur. 
+                    Réalisation de projets variés (Projet base de donnée en SQL, Projet web sur WordPress, Projet Java, 
+                    Projet innovation, Projet Matériaux, Projet de serre connectée, etc.).</p>
+            </div>
+        </div>
+    </div>
+
+        <div id="footer">
+            <a href="https://www.linkedin.com/in/julia-masset/" target="_blank"> <img id="linkedin" src="stockage/linkedin.png"> </a>
+            <a href="mailto: julia.masset@epfedu.fr"> <img id="email" src="stockage/email.png"> </a>
+        </div>
+        
+    </body>
+</html>

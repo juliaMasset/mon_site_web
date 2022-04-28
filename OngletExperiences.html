@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Julia Masset - Portfolio</title>
+        <meta charset="UTF-8">
+        <!-- On  associe une image icone pour l'entête -->
+	    <link rel="icon" type="image/png" href="stockage/logo.png" />
+        <link rel="stylesheet" type="text/css" title="design" href="eportfolio.css"/>
+    </head>
+
+    <body>
+        <div id="menu">
+            <img id="image-menu" src="stockage/logoSansFondNegatif.png" alt="logo" 
+            onmouseover="this.src='stockage/logoSansFond.png';"
+            onmouseout="this.src='stockage/logoSansFondNegatif.png';" 
+            onclick="document.location='Accueil.html';"/>
+            <table id="tableau-menu">
+                <tr>
+                    <td class="t-text" onclick="document.location='OngletFormation.html'">Formation</td>
+                    <td class="t-text" id="active">Expériences</td>
+                    <td class="t-text" onclick="document.location='OngletCompetences.html'">Compétences</td>
+                    <td class="t-text" onclick="document.location='OngletProjets.html'">Projets</td>
+                    <td class="t-text" onclick="document.location='OngletInterets.html'">Intérêts</td>
+                </tr>
+            </table>
+        </div> 
+
+        <div id="carousel">
+            <div class="slider">
+
+                <a href="#slide-1">Stage élève ingénieur</a>
+                <a href="#slide-2">Stage humanitaire</a>
+                <a href="#slide-3">Stage d'exécution</a>
+
+                <div class="slides">
+                    <div id="slide-1">
+                        <a href="https://www.audibrussels.be/brussels/web/fr/company.html" target="_blank"><img class="img" src="stockage/audi.png"></a>
+                        <div class="description">
+                            <h2>Audi Brussels, Belgique</h2> </br>
+                            <p>Data Analyst</p> 
+                            <p class="date">Août - Décembre 2021</p>
+                            <p class="infos">Le projet réalisé est un projet de « Business Intelligence » sur le logiciel Qlick Sense. <br>
+                                Dans un premier temps, il a été nécessaire de récupérer les données financières de l’entreprise à partir du logiciel SAP, 
+                                de les analyser et de les préparer. <br> Dans un second temps, un tableau de bord a été créé à partir des données transformées 
+                                afin de visualiser et d’automatiser les dépenses prévues pour l’année en cours. <br>
+                                Ce tableau de bord permet de contrôler dépenses de l’entreprise, mais également de les comparer au budget accordé pour chaque département.</p>
+                        </div>
+                    </div>
+                    <div id="slide-2">
+                        <a href="https://www.protection-civile.org/" target="_blank"><img class="img" src="stockage/protec.png"></a>
+                        <div class="description">
+                            <h2>Protection Civile française, Troyes</h2> </br>
+                            <p>Bénévole</p> 
+                            <p class="date">Mars - Mai 2021</p>
+                            <p class="infos">Depuis le début de la crise sanitaire, de nombreuses mesures ont été mises en place afin de limiter la propagation du virus. 
+                                Mon rôle au sein de la Protection Civile a été de vérifier que ces mesures étaient bien respectées pour le bien de tous. 
+                                Mon stage s’est déroulé sous forme de demi-journées d’une durée d’environ 5 heures.
+                                J’ai effectué des missions à l’Hôpital Simone Veil à Troyes, mais également au centre de dépistage 
+                                et de vaccination COVID-19 avenue Maréchal de Lattre de Tassigny.</p>
+                        </div>
+                    </div>
+                    <div id="slide-3">
+                        <a href="https://www.valeo.com/fr/systemes-thermiques/" target="_blank"><img class="img" src="stockage/valeo.png"></a>
+                        <div class="description">
+                            <h2>Valeo, La Verrière</h2> </br>
+                            <p>Stagiaire au laboratoire matériaux de R&D</p> 
+                            <p class="date">Juin - Juillet 2019</p>
+                            <p class="infos">Durant mes 6 semaines de stage, j’ai travaillé sur un projet de validation d’une graisse sans silicone pour une application dans l’HVAC (
+                                Heating, Ventilation and Air-Conditioning) au laboratoire matériaux de la division Systèmes Thermiques de Valeo.
+                                <br> J’ai réalisé des tests de compatibilité des graisses sur les différents plastiques utilisés dans
+                                l’HVAC pour trouver la plus adaptée. J’ai effectué deux types de tests de compatibilité durant mon stage : des essais de vieillissement
+                                thermique sur les élastomères et des essais de traction sur les thermoplastiques.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="https://www.linkedin.com/in/julia-masset/" target="_blank"> <img id="linkedin" src="stockage/linkedin.png"> </a>
+            <a href="mailto: julia.masset@epfedu.fr"> <img id="email" src="stockage/email.png"> </a>
+        </div>
+    </body>
+</html>

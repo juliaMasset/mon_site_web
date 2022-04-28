@@ -1,0 +1,549 @@
+body /*Propriétés pour le body (Toute la page affichée)*/ 
+{ 
+    margin:auto;
+    width: fit-content;	
+    margin-top      : 0px;              /*La marge de bas de l'élement en pixels*/
+	margin-bottom   : 10px;             /*La marge du haut de l'élement en pixels*/
+    color: white;
+    font-family: 'Montserrat', sans-serif; ;
+    background-color: #498aad;
+    background-image: url("stockage/Plantes_fond.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100px;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("stockage/polices/Montserrat-VariableFont_wght.ttf"),
+           url("stockage/polices/Montserrat-Italic-VariableFont_wght.ttf");
+   }
+
+@font-face {
+font-family: "Montserrat Bold";
+src: url("stockage/polices/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Semi-Bold";
+    src: url("stockage/polices/Montserrat-SemiBold.ttf");
+    }
+
+#menu-selected   /*Propriétés pour la div avec l'id menu*/
+{
+    height: 85px;             /*La hauteur de l'élement en pixels (la même que celle des images)*/
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 100%;
+}
+
+#menu
+{
+    height: 85px;             /*La hauteur de l'élement en pixels (la même que celle des images)*/
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 100%;
+    background-color: white;
+}
+
+#corps
+{
+    display: flex;
+    flex-direction: row;
+    height: 535px;
+    width: 1130px;
+    margin-top: 30px;
+}
+
+#image-menu-selected /*Propriétés pour l'image definie avec un identifiant */
+{
+     float              : left;             /*Place l'élement sur le côté gauche de la page*/
+     padding-right       : 30px;
+     padding-left       : 30px;
+     width: 86px;
+     height: 85px;
+}
+
+#image-menu-selected:hover 
+{
+    cursor: pointer; 
+}
+
+#image-menu /*Propriétés pour l'image definie avec un identifiant */
+{
+     float              : left;             /*Place l'élement sur le côté gauche de la page*/
+     padding-right       : 30px;
+     padding-left       : 30px;
+     width: 86px;
+     height: 85px;
+}
+
+#image-menu:hover 
+{
+    cursor: pointer;
+    background-color: #255975;   
+}
+
+#tableau-menu /*Propriétés pour le tableau du menu (défini par un identifiant)*/
+{
+    border-collapse     : collapse;         /*Fait fusionner les bordures du tableau*/
+    text-align		: center;           /*Le texte est centré dans les celulles*/
+    font-size		: 20px;             /*La taille de la police est de 11 pixels*/
+    color: black;
+    width: 100%;
+    table-layout: fixed;
+}
+
+tr, td /*Propriétés des lignes et colonnes des tableaux (ici on en a un seul, celui du menu)*/
+{
+    padding             : 0px;              /*écart de remplissage sur les cotés en pixels*/
+    height              : 40px;             /*La hauteur de l'élement en pixels (la même que celle des images)*/
+    background-color: white;
+}
+
+.t-text /*Propriétés des cellules de textes dans le tableau du menu (définies par des classes)*/
+{
+    padding-right       : 30px;             /*écart de remplissage sur la droite de l'élément en pixels*/
+    padding-left        : 30px;             /*écart de remplissage sur la gauche de l'élément en pixels*/
+    color: black;
+}
+
+.t-text:hover 
+{
+    cursor: pointer;  
+    background-color: #255975;
+    color: white;
+}
+
+#active
+{
+    background-color: #498aad;
+    color: white;
+}
+
+#intro
+{
+    margin-top: 40px;
+    margin-left: 210px;
+    width: 570px;
+    height: fit-content;
+}
+
+h3
+{
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+h2
+{
+    font-family: "Montserrat Semi-Bold";
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+h1
+{
+    font-family: "Montserrat Semi-Bold";
+    font-size: 38px;
+}
+
+p
+{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: white;
+    margin-bottom: 0px;
+} 
+
+.btn {
+    margin-top: 50px;
+    border: 3px solid white;
+    line-height: 2.5;
+    padding: 0 15px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    font-family: "Montserrat";
+    display: flex;
+    align-items: center;
+}
+
+#en_savoir_plus
+{
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 0 10px;
+    line-height: 2;
+    border: 2px solid white;
+}
+
+#en_savoir_plus img
+{
+    padding-left: 8px;
+    width: 19px;
+    height: 19px;
+}
+
+#en_savoir_plus:hover
+{
+    border: 2px solid #255975;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.btn img
+{
+    padding-left: 12px;
+    width: 25px;
+    height: 25px;
+}
+
+.btn:hover
+{
+    cursor: pointer;  
+    border: 3px solid #255975;
+}
+
+#maPhoto
+{
+    width: 280px;
+    height: 275px;
+    margin-top: 60px;
+    filter: brightness(1.1);
+    margin-left: 50px;
+    border-radius: 50%;
+}
+
+#footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#email
+{
+    width: 35px;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+}
+
+#linkedin
+{
+    width: 30px;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#footer img
+{
+    transition: all 0.3s ease;
+}
+
+#footer img:hover
+{
+    cursor: pointer; 
+    transform: translateY(-5px);
+}
+
+.rectangle
+{
+    margin-left: auto;
+    width:1000px;
+    background-color: #2057758e;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img
+{
+    width: 250px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.img:hover
+{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.description
+{
+    text-align: left;
+    width: 620px;
+    line-height: 13px;
+}
+
+.date
+{
+    font-style: italic;
+}
+
+.infos
+{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#experience
+{
+    height: 500px;
+    margin-top: 10px;
+}
+
+/* SLIDER */
+  
+#carousel
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 535px;
+    margin-top: 30px;
+}
+
+  .slider {
+    width: 1000px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 30px;
+  }
+
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 1000px;
+    height: 440px;
+    border-radius: 30px;
+    background: #205775a8;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .slider > a {
+    display: inline-flex;
+    width: 200px;
+    height: fit-content;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 5px 15px 5px;
+    line-height: 2.3;
+    position: relative;
+    color: black;
+  }
+
+  .slider > a:hover {
+    background: black;
+    color: white;
+  }
+
+  .slider > a:active {
+    background-color: black;
+    color: white;
+  }
+
+ /* FIN DU SLIDER */
+
+li
+{
+    line-height: 1.5;
+}
+
+ul
+{
+    margin-bottom: 0;
+}
+
+.drapeau
+{
+    width: 50px;
+    height: auto;
+    padding: 7px 10px 7px 10px;
+    margin-left: 75px;
+    margin-right: 60px;
+}
+
+#drapeaux
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#competence
+{
+    height: 230px;
+    padding: 10px 10px 10px 0;
+    width:500px;
+    background-color: #205775a8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0;
+}
+
+#rectangles
+{
+    display: flex;
+    flex-direction: column;
+    height: 535px;
+    width: 1150px;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.competences
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+#soft-skills
+{
+    width: 80px;
+    height: auto;
+    margin-right: 50px;
+    margin-left: 60px;
+
+}
+
+#associatif
+{
+    padding-left: 25px;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+#sport
+{
+    width: 150px;
+    filter: brightness(170%);
+    height: auto;
+    margin-right: 60px;
+    margin-left: 40px;
+    border-radius: 30px;
+}
+
+#interet1
+{
+    height: 230px;
+    padding: 10px 10px 10px 0;
+    width:640px;
+    background-color: #205775a8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+}
+
+#interet2
+{
+    height: 230px;
+    padding: 10px 10px 10px 0;
+    width:400px;
+    background-color: #205775a8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+}
+
+#dessin
+{
+    width: auto;
+    height: 155px;
+    margin-right: 15px;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+#violon
+{
+    width: 90px;
+    height: auto;
+    filter: contrast(1.2);
+    margin-right: 20px;
+    margin-left: 40px;
+    border-radius: 30px;
+}
+
+#asso
+{
+    width: 190px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 0;
+    filter: saturate(1.1);
+    border-radius: 30px;
+}
+
+#rm
+{
+    border-radius: 50%;
+}
