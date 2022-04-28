@@ -17,6 +17,7 @@ body /*Propriétés pour le body (Toute la page affichée)*/
     position:relative;
 }
 
+
 @font-face {
     font-family: "Montserrat";
     src: url("stockage/polices/Montserrat-VariableFont_wght.ttf"),
