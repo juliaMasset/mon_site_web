@@ -34,23 +34,13 @@ src: url("stockage/polices/Montserrat-Bold.ttf");
     src: url("stockage/polices/Montserrat-SemiBold.ttf");
     }
 
-#menu-selected   /*Propriétés pour la div avec l'id menu*/
+#menu   /*Propriétés pour la div avec l'id menu*/
 {
     height: 85px;             /*La hauteur de l'élement en pixels (la même que celle des images)*/
     display: flex;
     flex-direction: row;
     float: left;
     width: 100%;
-}
-
-#menu
-{
-    height: 85px;             /*La hauteur de l'élement en pixels (la même que celle des images)*/
-    display: flex;
-    flex-direction: row;
-    float: left;
-    width: 100%;
-    background-color: white;
 }
 
 #corps
@@ -58,37 +48,22 @@ src: url("stockage/polices/Montserrat-Bold.ttf");
     display: flex;
     flex-direction: row;
     height: 535px;
-    width: 1130px;
+    width: 1150px;
     margin-top: 30px;
-}
-
-#image-menu-selected /*Propriétés pour l'image definie avec un identifiant */
-{
-     float              : left;             /*Place l'élement sur le côté gauche de la page*/
-     padding-right       : 30px;
-     padding-left       : 30px;
-     width: 86px;
-     height: 85px;
-}
-
-#image-menu-selected:hover 
-{
-    cursor: pointer; 
+    justify-content: space-around;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #image-menu /*Propriétés pour l'image definie avec un identifiant */
 {
-     float              : left;             /*Place l'élement sur le côté gauche de la page*/
-     padding-right       : 30px;
-     padding-left       : 30px;
-     width: 86px;
-     height: 85px;
-}
-
-#image-menu:hover 
-{
-    cursor: pointer;
-    background-color: #255975;   
+     height: 70px;
+     width: 75px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 50px;
+     padding-right: 50px;
 }
 
 #tableau-menu /*Propriétés pour le tableau du menu (défini par un identifiant)*/
@@ -98,6 +73,7 @@ src: url("stockage/polices/Montserrat-Bold.ttf");
     font-size		: 20px;             /*La taille de la police est de 11 pixels*/
     color: black;
     width: 100%;
+    height: 85px;
     table-layout: fixed;
 }
 
@@ -122,6 +98,19 @@ tr, td /*Propriétés des lignes et colonnes des tableaux (ici on en a un seul, 
     color: white;
 }
 
+.t-image /*Propriétés des cellules de textes dans le tableau du menu (définies par des classes)*/
+{
+    padding-right       : 0;             /*écart de remplissage sur la droite de l'élément en pixels*/
+    padding-left        : 0;             /*écart de remplissage sur la gauche de l'élément en pixels*/
+    width: 175px;
+}
+
+.t-image:hover 
+{
+    cursor: pointer;  
+    background-color: #255975;
+}
+
 #active
 {
     background-color: #498aad;
@@ -131,15 +120,14 @@ tr, td /*Propriétés des lignes et colonnes des tableaux (ici on en a un seul, 
 #intro
 {
     margin-top: 40px;
-    margin-left: 210px;
-    width: 570px;
+    width: 600px;
     height: fit-content;
 }
 
 h3
 {
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 h2
@@ -149,12 +137,13 @@ h2
     font-weight: bold;
     margin-top: 0;
     text-decoration: underline;
+    line-height: 30px;
 }
 
 h1
 {
     font-family: "Montserrat Semi-Bold";
-    font-size: 38px;
+    font-size: 40px;
 }
 
 p
@@ -225,7 +214,6 @@ a
     height: 275px;
     margin-top: 60px;
     filter: brightness(1.1);
-    margin-left: 50px;
     border-radius: 50%;
 }
 
@@ -267,7 +255,6 @@ a
 
 .rectangle
 {
-    margin-left: auto;
     width:1000px;
     background-color: #2057758e;
     border-radius: 30px;
